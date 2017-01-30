@@ -1,0 +1,2 @@
+bridgedata <- read.csv("~/Downloads/2010_highwaybridgesonly_onefile.txt")
+mydata <- data.frame(FIPS_code = bridgedata$STATE_CODE_001, Bridge_ID = bridgedata$STRUCTURE_NUMBER_008, Year = bridgedata$YEAR_BUILT_027, Deck_Condition = bridgedata$DECK_COND_058, Superstructure_Condition = bridgedata$SUPERSTRUCTURE_COND_059, Substructure_Condition = bridgedata$SUBSTRUCTURE_COND_060, Channel_Condition = bridgedata$CHANNEL_COND_061, CulvertCondition = bridgedata$CULVERT_COND_062)
